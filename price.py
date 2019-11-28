@@ -1,4 +1,6 @@
 def discounted (price, discount):
+    price = abs(float(price))
+    discount = abs(float(discount))
     if discount >= 100:
       price_for_discount = price
     else:   
@@ -7,4 +9,4 @@ def discounted (price, discount):
     print(price_for_discount)
 
 
-discounted(1050, 20)
+discounted(10000, 70)
